@@ -50,5 +50,11 @@ Join our community of developers creating universal apps.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
 
 ## How to start locally - Run simulator
-xcode-setting-compnents and download iso to execute `npm run ios`
+- Change node version to latest
+- First Open the `Simulator`
+- Execute `npm run ios`
 
+
+## Development
+- After installing some packages, better clear the cache.
+- `npx expo start -c`
