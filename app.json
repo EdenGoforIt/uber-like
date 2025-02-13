@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-expo",
-    "slug": "react-native-expo",
+    "name": "Uber",
+    "slug": "uber",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
