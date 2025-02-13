@@ -1,14 +1,12 @@
-import { SafeAreaView, Text } from "react-native";
+import { Redirect } from "expo-router";
+import React from "react";
 
-const Home = () => {
+interface IHomeProps {}
+
+export default function Home() {
   return (
-    <SafeAreaView>
-      <Text>Home</Text>
-      <Text>Home</Text>
-      <Text>Home</Text>
-      <Text>Home</Text>
-    </SafeAreaView>
+    <>
+      <Redirect href="/(auth)/welcome" />
+    </>
   );
-};
-
-export default Home;
+}
