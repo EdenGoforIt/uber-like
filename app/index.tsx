@@ -6,7 +6,8 @@ interface IHomeProps {}
 export default function Home() {
   return (
     <>
-      <Redirect href="/(auth)/welcome" />
+      {/* // TODO: for tev. go back to welcome page  */}
+      <Redirect href="/(auth)/sign-up" />
     </>
   );
 }

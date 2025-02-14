@@ -1,16 +1,8 @@
-import React, { ReactNode } from "react";
+import { ButtonProps } from "@/types/on-boarding/type";
+import React from "react";
 import { Text, TouchableOpacity } from "react-native";
 
-interface IProp {
-  onPress: () => void;
-  title: string;
-  bgVariant?: "secondary" | "primary" | "danger" | "success" | "outline";
-  textVariant?: "secondary" | "primary" | "danger" | "success" | "outline";
-  IconLeft?: React.FC | ReactNode;
-  IconRight?: React.FC | ReactNode;
-  className?: string | undefined;
-}
-const getBgVariantStyle = (variant: IProp["bgVariant"]) => {
+const getBgVariantStyle = (variant: ButtonProps["bgVariant"]) => {
   switch (variant) {
     case "secondary":
       return "bg-gray-500";
@@ -25,7 +17,7 @@ const getBgVariantStyle = (variant: IProp["bgVariant"]) => {
   }
 };
 
-const getTextVariantStyle = (variant: IProp["textVariant"]) => {
+const getTextVariantStyle = (variant: ButtonProps["textVariant"]) => {
   switch (variant) {
     case "primary":
       return "text-black";
@@ -40,7 +32,7 @@ const getTextVariantStyle = (variant: IProp["textVariant"]) => {
   }
 };
 
-const CustomButton: React.FC<IProp> = ({
+const CustomButton: React.FC<ButtonProps> = ({
   onPress,
   title,
   bgVariant = "primary",
