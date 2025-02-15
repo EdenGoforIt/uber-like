@@ -1,4 +1,4 @@
-import { InputFieldProps } from "@/types/on-boarding/type";
+import { InputFieldProps } from "@/types/type";
 import {
   Image,
   Keyboard,

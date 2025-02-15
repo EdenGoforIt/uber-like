@@ -1,6 +1,5 @@
-import { ButtonProps } from "@/types/on-boarding/type";
-import React from "react";
-import { Text, TouchableOpacity } from "react-native";
+import { ButtonProps } from "@/types/type";
+import { Text, TouchableOpacity, View } from "react-native";
 
 const getBgVariantStyle = (variant: ButtonProps["bgVariant"]) => {
   switch (variant) {
@@ -13,7 +12,7 @@ const getBgVariantStyle = (variant: ButtonProps["bgVariant"]) => {
     case "outline":
       return "bg-transparent border-neutral-300 border-[0.5px]";
     default:
-      return "bg-[#0286ff]";
+      return "bg-[#0286FF]";
   }
 };
 
@@ -32,26 +31,33 @@ const getTextVariantStyle = (variant: ButtonProps["textVariant"]) => {
   }
 };
 
-const CustomButton: React.FC<ButtonProps> = ({
+const CustomButton = ({
   onPress,
   title,
   bgVariant = "primary",
-  textVariant,
+  textVariant = "default",
   IconLeft,
   IconRight,
   className,
   ...props
-}) => (
-  <TouchableOpacity
-    onPress={onPress}
-    className={`w-full rounded-full flex flex-row p-3 justify-center items center shadow-md shadow-neutral-400/70
-			 ${getBgVariantStyle(bgVariant)} ${className}`}
-    {...props}
-  >
-    <Text className={`text-lg font-bold ${getTextVariantStyle(textVariant)}`}>
-      {title}
-    </Text>
-  </TouchableOpacity>
-);
+}: ButtonProps) => {
+  return (
+    <View className="mx-3">
+      <TouchableOpacity
+        onPress={onPress}
+        className={`w-full rounded-full p-3 flex flex-row justify-center items-center shadow-md shadow-neutral-400/70 ${getBgVariantStyle(bgVariant)} ${className}`}
+        {...props}
+      >
+        {IconLeft && <IconLeft />}
+        <Text
+          className={`text-lg font-bold ${getTextVariantStyle(textVariant)}`}
+        >
+          {title}
+        </Text>
+        {IconRight && <IconRight />}
+      </TouchableOpacity>
+    </View>
+  );
+};
 
 export default CustomButton;
