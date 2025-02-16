@@ -1,8 +1,10 @@
-import { Text, View } from "react-native";
+import RiderLayout from "@/components/RiderLayout";
+import { Text } from "react-native";
 
 const FindRide = () => (
-  <View>
-    <Text>Fiund route</Text>
-  </View>
+  <RiderLayout>
+    <Text className="text-2xl">You are here: Auckalnd</Text>
+    <Text className="text-2xl">You are going to: Christchurch</Text>
+  </RiderLayout>
 );
 export default FindRide;

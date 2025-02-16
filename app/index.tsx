@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* // TODO: for tev. go back to welcome page  */}
-      <Redirect href="/(root)/(tabs)/home" />
+      <Redirect href="/(root)/find-ride" />
     </>
   );
 }
