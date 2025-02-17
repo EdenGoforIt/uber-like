@@ -1,10 +1,12 @@
+import CustomButton from "@/components/CustomButton";
 import GoogleTextInput from "@/components/GoogleTextInput";
-import RiderLayout from "@/components/RiderLayout";
+import RiderLayout from "@/components/RideLayout";
 import { icons } from "@/constants";
+import { router } from "expo-router";
 import { Text, View } from "react-native";
 
 const FindRide = () => (
-  <RiderLayout title="Ride">
+  <RiderLayout title="Ride" snapPoints={["80%", "80%"]}>
     <View className="my-3">
       <Text className="text-lg font-JakartaSemiBold mb-3">From</Text>
       <GoogleTextInput
@@ -24,6 +26,11 @@ const FindRide = () => (
         handlePress={() => {}}
       />
     </View>
+    <CustomButton
+      title="Find Now"
+      onPress={() => router.push("/(root)/confirm-ride")}
+      className="mb-5"
+    />
   </RiderLayout>
 );
 export default FindRide;
