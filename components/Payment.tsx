@@ -18,6 +18,7 @@ const Payment = ({
 
   const openPaymentSheet = async () => {
     await initializePaymentSheet();
+    setSuccess(true);
   };
 
   const initializePaymentSheet = async () => {};
@@ -52,7 +53,7 @@ const Payment = ({
               setSuccess(false);
               router.push("/(root)/(tabs)/home");
             }}
-            className="mt-5"
+            className="mt-5 justify-between"
           />
         </View>
       </ReactNativeModal>
