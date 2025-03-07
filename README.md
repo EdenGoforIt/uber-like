@@ -1,60 +1,47 @@
-# Welcome to your Expo app 👋
+# 🚀 Uber Clone
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 🤖 Introduction
 
-## Get started
+Uber Clone is a full-stack mobile application built with **React Native** for the user interface, **Google Maps** for seamless navigation, **Stripe** for secure payments, and **serverless PostgreSQL** for efficient database management. Styled with **TailwindCSS**, this project demonstrates how to build a modern, scalable, and visually appealing mobile app.
 
-1. Install dependencies
+The primary goal is to showcase full-stack mobile development skills, making a lasting impression on users and potential employers.
+  
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## ⚙️ Tech Stack
 
-   ```bash
-    npx expo start
-   ```
+This project is powered by cutting-edge technologies:
 
-In the output, you'll find options to open the app in a
+- **React Native** – Cross-platform mobile development
+- **Expo** – Simplified development workflow
+- **Stripe** – Secure and seamless payment processing
+- **PostgreSQL** – Scalable and reliable database
+- **Google Maps** – Real-time maps and navigation
+- **Zustand** – Lightweight state management
+- **Clerk** – Authentication made easy
+- **Tailwind CSS** – Utility-first styling for beautiful UI
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠 How to Run the Project
 
-## Get a fresh project
+Follow these steps to set up and run the project locally:
 
-When you're ready, run:
+### 1️⃣ Prerequisites
+Ensure you have the following installed:
 
-```bash
-npm run reset-project
+- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+- [Expo CLI](https://docs.expo.dev/) (`npm install -g expo-cli`)
+- [Git](https://git-scm.com/)
+- A mobile emulator (Android Studio or Xcode) or Expo Go App on your device.
+
+### 2️⃣ Clone the Repository
+```sh
+git clone https://github.com/YOUR_GITHUB_USERNAME/uber-clone.git
+cd uber-clone
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-## How to start locally - Run simulator
-- Change node version to latest
-- First Open the `Simulator`
-- Execute `npm run ios`
-
-
-## Development
-- After installing some packages, better clear the cache.
-- `npx expo start -c`
+### How to run the project
+```
+npx expo start
+```
