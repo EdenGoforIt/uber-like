@@ -1,5 +1,8 @@
 # 🚀 Uber Clone
 
+![image](https://github.com/user-attachments/assets/8742de15-41b1-416c-9f9b-84eb2c6d66d1)
+
+
 ## 🤖 Introduction
 
 Uber Clone is a full-stack mobile application built with **React Native** for the user interface, **Google Maps** for seamless navigation, **Stripe** for secure payments, and **serverless PostgreSQL** for efficient database management. Styled with **TailwindCSS**, this project demonstrates how to build a modern, scalable, and visually appealing mobile app.
@@ -45,3 +48,5 @@ cd uber-clone
 ```
 npx expo start
 ```
+
+
